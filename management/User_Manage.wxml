@@ -1,0 +1,36 @@
+<!-- space -->
+<view class="tab"></view>
+<view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="Please Input Barber's name" bindinput="getInputRoomName" value="{{RoomName}}"></input>
+  </view>
+</view>
+
+<view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="Please Input Date" bindinput="getInputWeekdays" value="{{Weekdays}}"></input>
+  </view>
+</view>
+
+<view class="tab"></view>
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="Please Input ID" bindinput="getInputTimes" value="{{Times}}"></input>
+  </view>
+
+
+<view class="first_line">
+  <view class="searchbox">
+    <input placeholder="Please Input User Name" bindinput="getInputTeacherID" value="{{TeacherID}}"></input>
+  </view>
+</view>
+
+<button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo" bindtap="click_apply">
+Submit
+</button>
+
