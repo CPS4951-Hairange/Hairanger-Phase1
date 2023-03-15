@@ -4,7 +4,7 @@
 
 <view class="first_line">
   <view class="searchbox">
-    <input placeholder="Please Input Barber's name" bindinput="getInputRoomName" value="{{RoomName}}"></input>
+    <input placeholder="Please Input Customer's name" bindinput="getInputCustomerName" value="{{CustomerName}}"></input>
   </view>
 </view>
 
@@ -12,7 +12,7 @@
 
 <view class="first_line">
   <view class="searchbox">
-    <input placeholder="Please Input Date" bindinput="getInputWeekdays" value="{{Weekdays}}"></input>
+    <input placeholder="Please Input Date" bindinput="getInputDate" value="{{Date}}"></input>
   </view>
 </view>
 
@@ -20,17 +20,16 @@
 
 <view class="first_line">
   <view class="searchbox">
-    <input placeholder="Please Input ID" bindinput="getInputTimes" value="{{Times}}"></input>
+    <input placeholder="Please Input ID" bindinput="getInputCustomerID" value="{{CustomerID}}"></input>
   </view>
 
 
 <view class="first_line">
   <view class="searchbox">
-    <input placeholder="Please Input User Name" bindinput="getInputTeacherID" value="{{TeacherID}}"></input>
+    <input placeholder="Please Input Barber's Name" bindinput="getInputBarberName" value="{{BarberName}}"></input>
   </view>
 </view>
 
 <button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo" bindtap="click_apply">
 Submit
 </button>
-
