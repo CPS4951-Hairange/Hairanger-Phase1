@@ -1,0 +1,18 @@
+/**index.wxss**/
+.box_item{
+
+    width: 100%;
+    height: 100rpx;
+    margin-top: 10rpx;
+    /* background: rgb(241, 238, 238); */
+    display: flex;
+    justify-content: space-evenly;
+}
+.box_item_index,.box_item_number{
+    width: 50rpx;
+    display: flex;
+}
+.box_item_number view {
+
+    margin: 0 10rpx;
+}
