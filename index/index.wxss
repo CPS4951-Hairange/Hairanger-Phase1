@@ -1,0 +1,14 @@
+/**index.wxss**/
+Page {
+  text-align: justify;
+}
+.text {
+  color:ORANGE;
+}
+.title{
+  text-align: center;
+  color: Orange;
+}
+
+
+
