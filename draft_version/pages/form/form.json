@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "表单",
+    "usingComponents": {
+        "zan-cell": "/components/zanui-weapp/dist/cell/index"
+    }
+}

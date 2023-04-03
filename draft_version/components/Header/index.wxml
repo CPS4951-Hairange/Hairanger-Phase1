@@ -1,0 +1,11 @@
+<view class="header">
+    <view class="text">
+        {{ appName }}
+    </view>
+    <view class="search-container" bindtap="navigateToSearchPage">
+        <view class="input-container">
+            <zan-icon class="input-icon" type="edit"></zan-icon>
+            <span class="input">Search</span>
+        </view>   
+    </view>
+</view>

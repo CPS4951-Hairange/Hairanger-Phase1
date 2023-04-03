@@ -1,0 +1,22 @@
+    <view class="intro-card">
+        <image class="pic" src="{{ pic }}" />
+        <view class="right-container">
+            <view class="tags-container">
+                <view class="tag">
+                    <zan-tag type="primary">{{ barber }}</zan-tag>   
+                </view>   
+                <view class="tag">
+                    <zan-tag type="primary">{{ category }}Product Category</zan-tag>  
+                </view> 
+            </view>
+     
+            <view class="zan-ellipsis">
+                {{ intro }}
+            </view>
+    
+            <view class="tel">
+                <zan-icon type="phone"></zan-icon>
+                {{ tel }}
+            </view>
+        </view>
+    </view>

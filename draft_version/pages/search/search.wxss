@@ -1,0 +1,28 @@
+.search-page {
+    background-color: #F4F4F4;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cards-container {
+  background-color: #F4F4F4;
+}
+.slash {
+  width: 30px;
+  content: "";
+  border-top: 1px solid#4d4d4d;
+}
+.text {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.cards-container-title {  
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+}

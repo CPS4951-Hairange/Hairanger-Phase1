@@ -1,0 +1,31 @@
+<view class='user' bindtap='onTapHead'>
+    <view class='user-head'>
+        <image src='{{avatarUrl}}'></image>
+    </view>
+    <view class='user-info'>
+        <view wx:if="{{isLogged}}" class='user-name'>{{user_name}}</view>
+        <view wx:if="{{isLogged}}" class='user-id'>{{user_id}}</view>
+        <view wx:if="{{!isLogged}}">Bind WKU Account</view>
+    </view>
+</view>
+
+<view class='block'>
+    <view class='item' data-id='info'bindtap='onTapMenu' >
+        <view>Profile</view>
+    </view>
+    <view class='item' data-id='manage'bindtap='onTapMenu' >
+        <view>Management</view>
+    </view>
+    <view class='item' data-id='reverse' style='border-bottom:none;' bindtap='onTapMenu'>
+        <view>Reverse Record</view>
+    </view>
+</view>
+
+<view class='block'>
+    <view class='item' data-id='advice' bindtap='onTapMenu'>
+        <view>Development Advice</view>
+    </view>
+    <view class='item' data-id='issues' bindtap='onTapMenu'>
+        <view>Issues Feedback</view>
+    </view>
+</view>

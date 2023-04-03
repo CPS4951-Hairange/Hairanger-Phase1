@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "User",
+    "usingComponents": {
+        "zan-cell": "/components/zanui-weapp/dist/cell/index",
+        "zan-cell-group": "/components/zanui-weapp/dist/cell-group/index",
+        "user-card": "/components/UserCard/index",
+        "zan-tab": "/components/zanui-weapp/dist/tab/index",
+        "comment-card": "/components/CommentCard/index"
+    }
+}

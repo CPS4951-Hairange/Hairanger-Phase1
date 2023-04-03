@@ -1,0 +1,9 @@
+/* pages/payment/payment.wxss */
+.payment{
+display: flex;
+width: 100%;
+height: 100vh;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}

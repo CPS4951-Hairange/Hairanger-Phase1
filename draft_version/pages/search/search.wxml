@@ -1,0 +1,34 @@
+<view class="search-page">
+  <zan-search
+    placeholder="Search..."
+    keyword="{{ inputValue }}"
+    placeholder="Search your likes"
+    focus="{{ focus }}"
+    bindchange="searchChange"
+    bindsearch="searchDone"
+  />
+
+   <view class="cards-container-title">
+        <view class="slash"></view>
+        <view class="text">
+            Search Result
+        </view>
+        <view class="slash"></view>
+    </view>
+    <zan-loadmore wx:if="{{shopsList === null}}" type="text" text="No Data Available"></zan-loadmore>
+    <view class="cards-container"  wx:for="{{shopsList}}" wx:key="{{item.sid}}">     
+      <shop-card
+        sid="{{item.sid}}"
+        name="{{item.name}}"
+        intro="[{{item.address}}]{{item.intro}}"
+        tel="{{item.tel}}"
+        pic="{{item.pic}}"
+        meanMark="{{item.meanMark}}"
+      ></shop-card>
+    </view>
+    <zan-toptips
+      content="Please enter at least two characters"
+      duration="{{ duration }}"
+      is-show="{{ $zanui.toptips.show }}"
+    />
+</view>

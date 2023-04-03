@@ -1,0 +1,48 @@
+.comment-card {
+    background-color: #fff;
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid #E5E5E5;
+    width: 100vw;
+}
+
+.icon {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.right-container {
+    width: 75vw;
+}
+.top-container {
+    display: flex;
+    justify-content: space-between;
+}
+.tags-container {
+    margin-bottom: 8px;
+}
+.username {
+    font-size: 20px;
+    color: #2D2D2D;
+}
+
+.time {
+    font-size: 16px;
+    color: #AAAAAA
+}
+
+.content {
+    font-size: 16px;
+    color: #363636;
+    line-height: 24px;
+}
+
+.reply {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #999999;
+    background-color: #F4F4F4;
+    padding: 16px;
+    border-radius: 5px;
+}

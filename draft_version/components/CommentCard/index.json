@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "zan-capsule": "/components/zanui-weapp/dist/capsule/index"
+    }
+}

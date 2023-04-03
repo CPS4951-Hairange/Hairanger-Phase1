@@ -1,0 +1,24 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+<navigator url="/pages/shop/shop?id={{ sid }}" hover-class="navigator-hover">
+    <view class="shop-card">
+        <view class="pic-container">
+            <image class="pic" src="{{ pic }}" />
+        </view>
+        <view class="detail-container">
+            <view class="title-container">
+                <view class="title">
+                    {{ name }}
+                </view>  
+                <zan-capsule color="#38f" leftText="评分" rightText="{{meanMark}}" />    
+            </view>   
+            <view class="intro">
+                {{ intro }}
+            </view>  
+            <!-- <view class="tel">
+            <zan-icon type="phone"></zan-icon>
+            {{ tel }}
+            </view> -->
+        </view>
+    </view>
+    <slot></slot>
+</navigator>

@@ -1,0 +1,29 @@
+.shop-page {
+    background-color: #F4F4F4;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.cell {
+    margin-top: 16px;
+    background-color: #fff;
+}
+.intro-text {
+    padding: 8px;
+    line-height:24px;
+    font-size:14px;
+}
+
+.comment-card-container {
+    margin-top: 16px;
+}
+.comment-cards-container {
+    margin-bottom: 40px;
+}
+
+.button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}

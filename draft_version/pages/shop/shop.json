@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "Barber Information",
+    "usingComponents": {
+        "intro-card": "/components/IntroCard/index",
+        "comment-card": "/components/CommentCard/index",
+        "zan-tab": "/components/zanui-weapp/dist/tab/index",
+        "zan-cell": "/components/zanui-weapp/dist/cell/index",
+        "zan-button": "/components/zanui-weapp/dist/btn/index"
+    }
+}

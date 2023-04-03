@@ -1,0 +1,56 @@
+<!-- 这里因为wxs部分不是很长, 直接放过来了 sum模块, 负责运算总价. -->
+<wxs module="sum">
+  function sum(checkList) {
+    var total = 0;
+    for (var i = 0; i < checkList.length; i++) {
+      if (checkList[i].isChecked) {
+        total += checkList[i].number * checkList[i].price
+      }
+    }
+    return total
+  }
+
+  module.exports = sum
+</wxs> 
+
+<view class="box">
+  <view 
+    wx:for="{{checkList}}" 
+    wx:key="index" 
+    class="box_item"
+  > 
+    <view class="box_item_index"> 
+      <checkbox 
+        checked="{{item.isChecked}}" 
+        bindtap="handleTap" 
+        data-index="{{index}}"
+      >
+      </checkbox>
+      <view class="pro_index">{{index}}</view>
+    </view>
+    <view class="box_item_main">  
+      {{item.name}}
+    </view>
+    <view class="box_item_price"> 
+      {{item.price}}￥
+    </view>
+    <view class="box_item_number"> 
+      <view  
+        type="primary" 
+        bindtap="addnum" 
+        data-currentnum="{{[item.number, index]}}"
+      >+</view>
+     
+      {{item.number}}
+      <view 
+        type="primary" 
+        bindtap="cutnum" 
+        data-currentnum="{{[item.number, index]}}"
+      >-</view>
+    </view>
+  </view>
+  <button class="totalPrice" bindtap="sums" data-sum="{{sum(checkList)}} "  > 总价 
+    去结算: {{sum(checkList)}} 
+    
+  </button>
+</view>

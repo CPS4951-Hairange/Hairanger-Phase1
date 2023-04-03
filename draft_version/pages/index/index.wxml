@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="index-container">
+    <header></header>
+    <view class="categories-container">
+        <category-icon icon="like" text="Male Hairstyle"></category-icon>
+        <category-icon icon="like-o" text="Female Hairstyle"></category-icon>
+        <category-icon icon="contact" text="Star Barber"></category-icon>
+        <category-icon icon="records" text="Comment & Rate"></category-icon>
+    </view>
+    <view class="cards-container-title">
+        <view class="slash"></view>
+        <view class="text">
+            VIP Service
+        </view>
+        <view class="slash"></view>
+    </view>
+    <view class="categories-container">
+      <category-icon icon="pending-payment" text="Payment System"></category-icon>
+      <category-icon icon="member-day-privilege" text="Reverse System"></category-icon>
+    </view>
+    
+    <view class="cards-container"  wx:for="{{shopsList}}" wx:key="{{item.sid}}">     
+        <shop-card
+            sid="{{item.sid}}"
+            name="{{item.name}}"
+            intro="[{{item.address}}]{{item.intro}}"
+            tel="{{item.tel}}"
+            pic="{{item.pic}}"
+            meanMark="{{item.meanMark}}"
+        ></shop-card>
+    </view>
+    
+</view>

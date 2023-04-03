@@ -1,0 +1,47 @@
+.shop-card {
+  display: flex;
+  width: 100vw;
+  border: 1px solid #E5E5E5;
+  margin-bottom: 8px;
+  background-color: #fff;
+}
+.pic-container {
+  margin: 8px;
+
+}
+.detail-container {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  width: 80vw;
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+.pic {
+  width: 20vw;
+  height: 17vw;
+}
+.title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  padding-top: 8px;
+  margin-bottom: 8px;
+  color: #333;
+}
+.intro {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+  text-overflow: ellipsis;
+  height: 34px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.tel {
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+}

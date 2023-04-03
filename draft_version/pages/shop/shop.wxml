@@ -1,0 +1,59 @@
+<view class="shop-page">
+    <intro-card
+        barber="{{ barber }}"
+        category="{{ category }}"
+        intro="{{ intro }}"
+        tel="{{ tel }}"
+        pic="{{ pic }}"
+    ></intro-card>
+    <zan-tab
+        list="{{ tabList }}"
+        selected-id="{{ selectedTabId }}"
+        bindtabchange="handleTabChanged"
+    />
+    <!--Shop -->
+    <view wx:if="{{ selectedTabId === '1' }}">
+        <view class="cell">
+            <zan-cell title="Tel" value="{{ tel }}"></zan-cell>
+        </view>
+        <view class="cell">
+            <zan-cell title="Business Hours" value="{{ workTime }}"></zan-cell>
+        </view>
+        <view class="cell">
+            <view class="intro-text">
+                {{ intro }}    
+            </view>
+        </view>
+    </view>
+    <!-- Comment -->
+    <view wx:if="{{ selectedTabId === '2' }}">
+        <view class="cell">
+            <zan-cell title="Total Score" value="{{meanMark}}"></zan-cell>
+            <zan-cell title="Environment Quality" value="{{envMark}}"></zan-cell>
+            <zan-cell title="Service Attitude" value="{{serviceMark}}"></zan-cell>
+            <zan-cell title="Hairstyle Quality" value="{{qualityMark}}"></zan-cell>
+        </view>
+        <view class="comment-cards-container">
+            <view class="comment-card-container" wx:for="{{comments}}" wx:key="{{item.cid}}">
+                <comment-card
+                    username="{{item.username}}"
+                    date="{{item.date}}"
+                    mark="{{item.meanMark}}"
+                    comment="{{item.content}}"
+                    ownerReply="{{item.ownerReply}}"
+                    ownerReplyTime="{{item.ownerReplyStatus}}"
+                    adminReply="{{item.adminReply}}"
+                    adminReplyTime="{{item.adminReplyStatus}}"
+                />
+            </view>  
+        </view>
+      
+    </view>
+
+        <view class="button">
+            <zan-button type="primary" bindtap="handleButtonClicked">Evaluate</zan-button>    
+        </view>
+ 
+
+
+</view>

@@ -1,0 +1,7 @@
+<!--pages/payment/payment.wxml-->
+<view class="payment">
+    <view>
+        支付成功
+    </view>
+    {{sumPrice}}
+</view>

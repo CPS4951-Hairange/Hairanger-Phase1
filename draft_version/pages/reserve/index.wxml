@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class="title">Welcome to barber reservation system!</view>
+<image mode="widthFix" src="./barber.jpg"></image>
+
+<view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">Reservation number</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" placeholder-style="color:#70DB93" auto-focus placeholder="Please input your reservation number"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">Card number</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" maxlength="10" placeholder-style="color:#70DB93"  placeholder="Please input your card number" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">Barber number</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  maxlength="10" bindinput="bindKeyInput" placeholder-style="color:#70DB93" placeholder="Please input barber's id number"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">Service number</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  bindinput="bindReplaceInput" placeholder-style="color:#70DB93" placeholder="Please input service number here" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">Reserve time</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" placeholder-style="color:#70DB93" placeholder="Please input reserve time you want" />
+      </view>
+    </view>
+  </view>
+</view>
+
+<button bindtap="onClick">SUBMIT</button>
+
+<VIEW class="title">Reserve {{statusing}}</VIEW>
+
+
+
+
+
+
+
+

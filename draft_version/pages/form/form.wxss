@@ -1,0 +1,41 @@
+.form-page {
+    background-color: #F4F4F4;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 8px;
+    overflow: hidden;
+}
+.form-card {
+    background-color: #fff;
+    margin: 16px;
+    padding: 16px;  
+}
+.top-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 8px;
+}
+.pic {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin-right: 16px;
+
+}
+.shopname {
+    font-size: 30px;
+}
+
+.input {
+    margin-top: 16px;
+    height: 30vh;
+    border: 1px solid #E5E5E5;   
+}
+
+.button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}

@@ -1,0 +1,21 @@
+.user-page {
+    background-color: #F4F4F4;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.reply-action-container {
+    padding-top: 16px;
+}
+.tel-action-container {
+    margin-top: 16px;
+}
+.cell-container {
+    border-bottom: 1px solid #f0b207;
+    height: 40px;
+    background-color: #fff;
+}
+.comment-cards-container {
+    margin-top: 16px;
+}

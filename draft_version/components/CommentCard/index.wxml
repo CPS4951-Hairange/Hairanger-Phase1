@@ -1,0 +1,29 @@
+<view class="comment-card">
+    <view>
+       <image class="icon" src="/static/avatar.png" />
+    </view>
+    <view class="right-container">
+        <view class="top-container"> 
+            <view class="username">
+                {{ username }}
+            </view>
+            <view class="time">
+                {{ date }}
+            </view>  
+        </view>
+
+        <view class="tags-container">
+            <zan-capsule color="#38f" leftText="评分" rightText="{{ mark }}" />
+        </view>
+      
+        <view class="content">
+            {{ comment }}
+        </view>
+        <view wx:if="{{ownerReply}}" class="reply">
+             {{ "Barber Reply(" + ownerReplyTime + ")：" + ownerReply }}
+        </view>
+        <view wx:if="{{adminReply}}" class="reply">
+             {{ "Boss Reply(" + adminReplyTime + ")：" + adminReply }}
+        </view>
+    </view>
+</view>

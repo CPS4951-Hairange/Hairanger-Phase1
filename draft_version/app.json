@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/shop/shop",
+    "pages/form/form",
+    "pages/search/search",
+    "pages/setting/setting",
+    "pages/pay/pay",
+    "pages/payment/payment",
+    "pages/reserve/index"
+  ],
+  "tabBar": {
+    "selectedColor": "#0c88ed", 
+    "color": "#bfbfbf",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "Home",
+      "iconPath": "static/index-grey.png",
+      "selectedIconPath": "static/index-blue.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "User",
+      "iconPath": "static/user-grey.png",
+      "selectedIconPath": "static/user-blue.png"
+    },{
+      "pagePath": "pages/pay/pay",
+      "text": "Payment",
+      "iconPath": "static/pay-grey.png",
+      "selectedIconPath": "static/pay-blue.png"
+    },{
+      "pagePath": "pages/reserve/index",
+      "text": "Reserve",
+      "iconPath": "static/reserve-grey.png",
+      "selectedIconPath": "static/reserve-blue.png"
+    },{
+      "pagePath": "pages/setting/setting",
+      "text": "Setting",
+      "iconPath": "static/setting-grey.png",
+      "selectedIconPath": "static/setting-blue.png"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Welcome All WKUers",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
+

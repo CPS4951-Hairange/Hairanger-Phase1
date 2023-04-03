@@ -1,0 +1,36 @@
+.index-container {
+  padding-top: 50px;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(221, 216, 206);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.cards-container {
+  background-color: #F4F4F4;
+}
+.slash {
+  width: 30px;
+  content: "";
+  border-top: 1px solid#4d4d4d;
+}
+.text {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.cards-container-title {  
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "shop-card": "/components/ShopCard/index",
+        "category-icon": "/components/CategoryIcon/index",
+        "header": "/components/Header/index"
+    }
+}
+  

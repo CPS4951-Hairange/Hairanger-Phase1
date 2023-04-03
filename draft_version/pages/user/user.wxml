@@ -1,0 +1,64 @@
+
+<view class="user-page">
+    <user-card
+        username="{{username}}"
+        pic="{{avatarUrl}}"
+    ></user-card>
+<!--
+    <view class="reply-action-container">
+        <view class="cell-container">
+            <zan-cell title="All commments" is-link url="/pages/dashboard/index"></zan-cell>
+        </view>
+        <view class="cell-container">
+            <zan-cell title="To be replied" is-link url="/pages/dashboard/index"></zan-cell>
+        </view>
+        <view class="cell-container">
+            <zan-cell title="Completed Replies" is-link url="/pages/dashboard/index"></zan-cell>
+        </view>    
+    </view>
+
+    <view class="tel-action-container">
+        <view class="cell-container">
+            <zan-cell title="Tel" is-link url="/pages/dashboard/index"></zan-cell>
+        </view>   
+    </view>
+-->
+     <zan-tab
+        list="{{ tabList }}"
+        selected-id="{{ selectedTabId }}"
+        bindtabchange="handleTabChanged"
+    />
+
+    <view wx:if="{{selectedTabId === '1'}}" class="comment-cards-container">
+        <view class="comment-card-container" wx:for="{{comments}}" wx:key="{{item.cid}}">
+            <comment-card
+                username="{{item.username}}"
+                date="{{item.date}}"
+                mark="{{item.meanMark}}"
+                comment="{{item.content}}"
+                ownerReply="{{item.ownerReply}}"
+                ownerReplyTime="{{item.ownerReplyStatus}}"
+                adminReply="{{item.adminReply}}"
+                adminReplyTime="{{item.adminReplyStatus}}"
+            />
+        </view>  
+    </view>  
+    <view wx:if="{{selectedTabId === '2'}}" class="comment-cards-container">
+        <view class="comment-card-container" wx:for="{{replyComments}}" wx:key="{{item.cid}}">
+            <comment-card
+                username="{{item.username}}"
+                date="{{item.date}}"
+                mark="{{item.meanMark}}"
+                comment="{{item.content}}"
+                ownerReply="{{item.ownerReply}}"
+                ownerReplyTime="{{item.ownerReplyStatus}}"
+                adminReply="{{item.adminReply}}"
+                adminReplyTime="{{item.adminReplyStatus}}"
+            />
+        </view>  
+    </view>  
+ 
+  
+
+
+</view>

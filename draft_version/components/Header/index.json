@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "zan-icon": "/components/zanui-weapp/dist/icon/index"
+    }
+}

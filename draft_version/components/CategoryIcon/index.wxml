@@ -1,0 +1,8 @@
+<navigator url="/pages/search/search?category={{ text }}" hover-class="navigator-hover">
+    <view class="category-icon">
+        <view class="icon-container" style="background-image: {{ iconColor }}">
+            <zan-icon type="{{ icon }}"></zan-icon>     
+        </view>
+        <view class="text">{{ text }}</view>
+    </view>
+</navigator>

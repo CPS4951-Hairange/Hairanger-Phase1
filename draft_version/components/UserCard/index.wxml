@@ -1,0 +1,12 @@
+    <view class="intro-card">
+        <image class="pic" src="{{ pic }}" />
+        <view class="right-container">
+           
+     
+            <view class="username">
+                {{ username }}
+            </view>
+    
+         
+        </view>
+    </view>

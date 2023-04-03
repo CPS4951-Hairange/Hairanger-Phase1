@@ -1,0 +1,64 @@
+/*登陆页面配置  */
+.user{
+  margin-top: 40rpx;
+  width: 750rpx;
+  height: 160rpx;
+  background: #fafafa;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 35rpx;
+}
+
+.user-head{
+  width: 160rpx;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-head image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 70rpx;
+}
+
+.user-info{
+  flex-grow: 1;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+
+.user-name{
+  padding-bottom: 10rpx;
+  font-weight: 300;
+}
+
+.user-id{
+  color: #999;
+  font-size: 25rpx;
+  font-weight: 400;
+}
+
+/*设置页面配置  */
+.block{
+  width: 750rpx;
+  margin: 30rpx 0;
+  font-size: 33rpx;
+  font-weight: 300;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+.item{
+  width: 730rpx;
+  height: 110rpx;
+  margin-left: 20rpx;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
