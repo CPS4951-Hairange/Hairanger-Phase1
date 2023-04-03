@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="input-group">
+    <input
+      type="text"
+      placeholder="Username"
+      value="{{username}}"
+      bindinput="onUsernameInput"
+    />
+  </view>
+  <view class="input-group">
+    <input
+      type="password"
+      placeholder="Password"
+      value="{{password}}"
+      bindinput="onPasswordInput"
+    />
+  </view>
+  <view class="submit-button" bindtap="onLoginSubmit">Login</view>
+</view>

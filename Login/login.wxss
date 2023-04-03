@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.submit-button {
+  background-color: #1AAD19;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10rpx 0;
+  border-radius: 5rpx;
+}
