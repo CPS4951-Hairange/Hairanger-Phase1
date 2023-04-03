@@ -1,0 +1,11 @@
+/* pages/user/user.wxss */
+.shuoming{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  margin:50rpx;
+ }
+ .tap{
+   margin:100rpx;
+ }

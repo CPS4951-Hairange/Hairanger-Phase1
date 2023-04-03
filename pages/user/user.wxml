@@ -1,0 +1,13 @@
+<!--pages/user/user.wxml-->
+ <!-- user用来存放用户输入内容，使用云开发，条目根据需求存放用户数据 -->
+<text>pages/user/user.wxml</text>
+//view显示客户需要填写的信息，用input模块供客户输入
+<view class="shuoming">条目1：<input type="text" bindinput="getTrem1"></input></view>
+<view class="shuoming">条目2：<input type="text" bindinput="getTrem2"></input></view>
+<view class="shuoming">条目3：<input type="text" bindinput="getTrem3"></input></view>
+<view class="shuoming">条目4：<input type="text" bindinput="getTrem4"></input></view>
+<view class="shuoming">条目5：<input type="text" bindinput="getTrem5"></input></view>
+<button class="tap" type='primary' bindtap="add">点击添加信息</button>
+
+// modal用于弹框，是给客户进行信息反馈的一种有效方式
+<modal title="友情提示" hidden="{{modalHidden}}" confirm-text="确定" cancel-text="关闭" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">信息已经添加成功！</modal>
